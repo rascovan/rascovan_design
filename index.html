@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Портфолио Даниила</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marck+Script&display=swap"
         rel="stylesheet">
+    <!-- Подключаем иконки для соцсетей -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,47 +21,88 @@
             <ul class="nav-list">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#projects">Проекты</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="main-content">
         <section id="projects" class="projects-section">
             <h2 class="section-title">Мои проекты</h2>
 
             <div class="projects-grid">
+
+                <!-- Карточка 1 (Viatours) -->
                 <div class="project-card">
-                    <div class="project-image-placeholder">#</div>
-                    <h3>Название проекта 1</h3>
-                    <p>описание</p>
+                    <div class="project-image-placeholder">
+                        <!-- Картинка должна быть СТРОГО ТУТ, внутри этого дива -->
+                        <img src="pictures/picture1.png" alt="Превью проекта Viatours">
+                    </div>
+                    <h3>Viatours</h3>
+                    <p>Адаптивный лендинг для туристического агентства, сверстанный Pixel Perfect по макету из Figma.
+                        Реализована современная галерея направлений, интерактивные фильтры туров и кастомный UI на
+                        чистом HTML/CSS/JS</p>
                     <a href="пиксо/index.html" target="_blank" class="project-link">Посмотреть</a>
                 </div>
+
+                <!-- Карточка 2 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder">#</div>
-                    <h3>Название проекта 2</h3>
-                    <p>описание</p>
-                    <a href="#" target class="project-link">Посмотреть</a>
+                    <div class="project-image-placeholder">
+                        <!-- Картинка СТРОГО ТУТ: замените 'pictures/picture2.png' на ваш путь к файлу -->
+                        <img src="pictures/super.PNG" alt="Превью проекта SUPER GEEK FEST">
+                    </div>
+                    <h3>SUPER GEEK FEST</h3>
+                    <p>Сайт для фестиваля, полностью созданный под ключ. Разработан с нуля без использования готовых
+                        конструкторов и шаблонов: от общей идеи до финальной настройки</p>
+                    <a href="code/index.html" target="_blank" class="project-link">Посмотреть</a>
                 </div>
+
+
+                <!-- Карточка 3 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder">#</div>
-                    <h3>проекта</h3>
-                    <p>описание</p>
-                    <a href="#" target class="project-link">Посмотреть</a>
+                    <div class="project-image-placeholder">
+                        <img src="pictures/sushi.PNG" alt="Превью проекта SUPER GEEK FEST">
+                    </div>
+                    <h3>Sushi club</h3>
+                    <p>«Суши Клаб» — это современный веб-сайт для заказа и доставки премиальных суши и роллов. Главный фокус проекта сделан на сочной визуальной подаче блюд, высокой скорости загрузки и максимально простом пути клиента от выбора сета до оформления заказа.</p>
+                    <a href="domashka/sushi.clab/index.html" target="_blank" class="project-link">Посмотреть</a>
                 </div>
 
             </div>
         </section>
     </main>
-    <footer id="contacts">
-        <section class="social-links">
-            <div class="bio">
-                <h5>Социальные сети</h5>
-                <a href="mailto:takemyre@yandex.ru">takemyre@yandex.ru</a>
-                <a></a>
+
+    <!-- Обновленный футер с твоими реальными рабочими аккаунтами -->
+    <footer id="contacts" class="site-footer">
+        <div class="footer-container">
+            <h5>Контакты & Связь</h5>
+            <div class="footer-links">
+                <!-- Почта -->
+                <a href="mailto:takemyre@yandex.ru" class="footer-link" title="Написать на почту">
+                    <i class="fa-solid fa-envelope"></i> takemyre@yandex.ru
+                </a>
+                <!-- Telegram -->
+                <a href="https://t.me" target="_blank" class="footer-link" title="Написать в Telegram">
+                    <i class="fa-brands fa-telegram"></i> @rascovan
+                </a>
+                <!-- Kwork фриланс -->
+                <a href="https://kwork.ru/user/rascovan" target="_blank" class="footer-link"
+                    title="Мой профиль на Kwork">
+                    <i class="fa-solid fa-briefcase"></i> Kwork: rascovan
+                </a>
+                <!-- GitHub репозиторий -->
+                <a href="https://github.com/rascovan/rascovan_design" target="_blank" class="footer-link"
+                    title="Мой GitHub">
+                    <i class="fa-brands fa-github"></i> GitHub: rascovan
+                </a>
             </div>
-        </section>
+
+            <!-- Дополнительная полезная строчка для заказчиков -->
+            <p class="footer-info">Доступен для заказов • Удаленная работа</p>
+
+            <p class="copyright">© 2026 Даниил. Все права защищены.</p>
+        </div>
     </footer>
 </body>
-
 
 </html>

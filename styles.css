@@ -113,12 +113,20 @@ body {
     height: 180px;
     background-color: #222;
     border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative; /* Добавь это */
+    overflow: hidden;   /* И это (чтобы картинка не вылезала за скругления) */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666;
-    margin-bottom: 15px;
-    font-size: 14px;
+}
+
+/* И убедись, что ниже у тебя прописаны стили для самой картинки: */
+.project-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка аккуратно подгонится под размер 180px */
+    display: block;
 }
 
 .project-card h3 {
@@ -149,4 +157,65 @@ body {
 .project-link:hover {
     background-color: #5ffed2;
     transform: scale(1.03);
+}
+/* ==========================================================================
+   Стили для подвала сайта (Footer)
+   ========================================================================== */
+
+.site-footer {
+    background-color: #111111;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px 20px;
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-footer h5 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-link {
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Отступ между иконкой FontAwesome и текстом */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link i {
+    font-size: 18px;
+}
+
+.footer-link:hover {
+    color: #5ffed2;
+    transform: translateY(-2px);
+}
+
+.copyright {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
 }
