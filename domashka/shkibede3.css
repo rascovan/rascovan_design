@@ -1,0 +1,145 @@
+body{
+    background-color: rgba(7, 15, 31, 0.9);
+}
+.power-element {
+    width: 30%; 
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 10px 1.5%;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 180px;
+    border: 2px solid;
+}
+.power-1 {
+    background: linear-gradient(
+        to bottom, 
+        rgba(100, 255, 218, 0.3) 0%, 
+        rgba(25, 40, 65, 0.9) 70% 
+    );
+    border-color: rgba(100, 255, 218, 0.5); 
+}
+.power-icon {
+    font-size: 40px; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 10px; 
+}
+
+
+.power-1 .power-icon {
+    color: #64ffda; 
+}
+.power-element h3 {
+    font-family: 'Audiowide', cursive; 
+    color: #ffffff; 
+    font-size: 18px; 
+    margin: 0; 
+}
+.power-2 {
+       background: linear-gradient(
+        135deg, 
+        rgba(79, 195, 247, 0.3) 0%,
+        rgba(25, 40, 65, 0.9) 70%
+    );
+    border-color: rgba(79, 195, 247, 0.5); 
+}
+.power-2 .power-icon {
+    color: #4fc3f7; 
+}
+.power-3 {
+       background: radial-gradient(
+        circle at center, 
+        rgba(255, 107, 107, 0.3) 0%, 
+        rgba(25, 40, 65, 0.9) 70% 
+    );
+    border-color: rgba(255, 107, 107, 0.5); 
+}
+
+.power-3 .power-icon {
+    color: #ff6b6b;
+}
+.site-footer {
+    margin-top: 70px; 
+    padding: 50px 20px; 
+    text-align: center;
+    
+        background: radial-gradient(
+        circle at center,
+        rgba(100, 255, 218, 0.2) 0%,
+        rgba(25, 40, 65, 0.6) 40%,
+        #0a192f 80%
+    );
+    border-top: 2px solid rgba(100, 255, 218, 0.4); 
+}
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'Audiowide', cursive;
+    font-size: 28px;
+    color: #64ffda;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.6);
+}
+.footer-text {
+    color: #8892b0;
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 25px; 
+}
+.footer-link {
+    display: inline-block;
+    color: #4fc3f7;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px; 
+    padding: 8px 15px; 
+    border-radius: 6px;
+    background: rgba(79, 195, 247, 0.1);
+    border: 1px solid rgba(79, 195, 247, 0.3); 
+    margin: 0 5px; 
+}
+.footer-energy {
+    color: #64ffda; 
+    font-size: 14px; 
+    font-family: 'Audiowide', cursive;
+}
+
+.energy-level {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.7);
+}
+.power-element:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+    transition: all 0.3s ease; 
+}
+.power-1:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(100, 255, 218, 0.5) 0%, 
+        rgba(25, 40, 65, 0.95) 70% 
+    );
+}
+.power-2:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(79, 195, 247, 0.5) 0%, 
+        rgba(25, 40, 65, 0.95) 70% 
+    );
+}
+
+.power-3:hover {
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 107, 107, 0.5) 0%, 
+        rgba(25, 40, 65, 0.95) 70% 
+  );
+}

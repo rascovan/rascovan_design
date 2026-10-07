@@ -1,0 +1,144 @@
+body{
+    background-color: rgba(7, 15, 31, 0.9);
+}
+.card-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+    background-image: url("https://i.pinimg.com/736x/9b/dc/7e/9bdc7e0e493f863674cd71257d4b47d2.jpg");
+}
+.cards-container {
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+.info-card {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 1.5%;
+    padding: 0 0 25px 0;
+    background-color: rgba(25, 40, 65, 0.85);
+    border-radius: 15px;
+    border: 2px solid rgba(100, 255, 218, 0.4);
+    overflow: hidden;
+}
+.info-card {
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(100, 255, 218, 0.15),
+        inset 0 0 15px rgba(100, 255, 218, 0.05); 
+        opacity: 0.95; 
+        height: 500px; 
+}
+.card-title {
+    font-family: 'Audiowide', cursive;
+    color: #4fc3f7;
+    font-size: 22px;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(79, 195, 247, 0.4);
+    text-shadow: 0 0 8px rgba(79, 195, 247, 0.6); 
+}
+.card-description {
+    color: #ccd6f6;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 15px 20px 15px;
+}
+.info-card-rare {
+    display: inline-block;
+    border: 2px solid #03f34f;
+    box-shadow: 0 0 25px rgba(3, 255, 58, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(25, 40, 65, 0.85);
+}
+.info-card-rare:hover {
+    transform: scale(1.05);
+}
+.info-card-epic{
+    display: inline-block;
+    border: 2px solid blue;
+    box-shadow: 0 0 25px rgba(5, 17, 185, 0.945);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    height: 500px;        
+    text-align: center;         
+    background-color: rgba(25, 40, 65, 0.85); 
+    
+}
+.card-container{
+    display: inline-block;
+    margin: 20px;
+}
+.info-card-epic:hover { 
+    transform: scale(1.05);
+}
+.info-card-mythic {
+    display: inline-block;
+    max-width: 200px;                           
+    margin: 15px;           
+    padding: 0 0 25px 0;           
+    background-color: rgba(25, 40, 65, 0.85);  
+    border: 2px solid #b31313;
+    box-shadow: 0 0 25px rgba(240, 1, 1, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;                 
+    height: 500px;             
+    text-align: center;    
+}
+.card-title-mythic {
+    font-family: 'Audiowide', cursive;
+    color: #b81818;
+    font-size: 22px;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(189, 18, 18, 0.4);
+    text-shadow: 0 0 8px rgba(180, 18, 18, 0.6);
+}
+.card-title-rare {
+    font-family: 'Audiowide', cursive;
+    color: #03f34f;
+    border-bottom: 2px solid rgba(24, 156, 13, 0.4);
+    font-size: 22px;
+}
+.card-title-epic{
+    font-family: 'Audiowide', cursive;
+    color: #1d05f1;
+    border-bottom: 2px solid rgba(94, 9, 206, 0.4);
+    font-size: 22px;
+}
+.info-card-mythic:hover {
+    transform: scale(1.05);
+}
+.info-card-legendary{
+display: inline-block;   
+max-width: 15%;                   
+    margin: 15px;           
+    padding: 0 0 25px 0;           
+    background-color: rgba(25, 40, 65, 0.85);  
+    border: 2px solid #e6d70b;
+    box-shadow: 0 0 25px rgba(214, 201, 9, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;                 
+    height: 500px;             
+    text-align: center;   
+}
+.card-title-legendary {
+    font-family: 'Audiowide', cursive;
+    color: #d8db0f;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(224, 221, 9, 0.4);
+    text-shadow: 0 0 8px rgba(219, 216, 11, 0.6);
+}
+.info-card-legendary:hover {
+    transform: scale(1.05);
+}

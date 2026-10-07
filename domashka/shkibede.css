@@ -1,0 +1,142 @@
+body{
+    background-color: rgba(7, 15, 31, 0.9);
+}
+.world-nav {
+    background: rgba(15, 25, 45, 0.9);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 30px 0;
+    border: 2px solid #00f5d4;
+    box-shadow: 0 0 30px rgba(0, 245, 212, 0.2);
+    text-align: center;
+}
+/* Список меню */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* Пункты меню */
+.menu-item {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+    padding: 15px;
+}
+/* Ссылки меню */
+.menu-link {
+    color: #00f5d4;
+    text-decoration: none;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(0, 245, 212, 0.3);
+    text-shadow: 0 0 10px rgba(0, 245, 212, 0.7); 
+}
+.world-sections {
+    width: 100%;
+    display: flex;
+}
+.locations-block,
+.rules-block {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px;
+    margin: 10px 1%;
+    background: rgba(20, 30, 50, 0.9);
+    border-radius: 18px;
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+/* Заголовки блоков */
+.block-title {
+    font-family: 'Audiowide', 'cursive';
+    color: #4fc3f7;
+    font-size: 26px;
+    margin: 0 0 25px 0;
+    padding: 15px;
+    border-bottom: 2px solid rgba(79, 195, 247, 0.3);
+    text-shadow: 0 0 10px rgba(79, 195, 247, 0.8);
+}
+/* Список локаций */
+.locations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Элементы списка локаций */
+.location-item {
+    color: #e0f7ff;
+    font-size: 19px;
+    padding: 18px 20px;
+    margin: 12px 0;
+    background: rgba(30, 45, 70, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #00f5d4;
+    line-height: 1.5;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+/* Список правил */
+.rules-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Элементы списка правил */
+.rule-item {
+    transition: 0.3s ease;  
+    color: #bbdefb;
+    font-size: 18px;
+    padding: 18px 20px;
+    margin: 15px 0;
+    background: rgba(40, 55, 80, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #4fc3f7;
+    line-height: 1.6;
+    font-family: 'Exo 2', sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+/* Стили для активной ссылки по ID */
+#main-nav { 
+    font-weight: bold;
+    background: rgba(0, 245, 212, 0.2);
+    box-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
+}
+/* Hover-эффект для ссылок меню */
+.menu-link:hover {
+    background: rgba(0, 245, 212, 0.25);
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 245, 212, 0.6);
+    transform: scale(1.05);
+}
+
+/* Hover-эффект для локаций */
+.location-item:hover {
+    background: rgba(0, 245, 212, 0.15);
+    border-left: 4px solid #ffffff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Hover-эффект для правил */
+.rule-item:hover {
+    background: rgba(79, 195, 247, 0.15);
+    border-left: 4px solid #ffffff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+.menu-link {
+    transition: 0.3s ease;  
+}
+.menu-link:hover {
+    transform: scale(1.05);
+    background: rgba(0, 245, 212, 0.25);
+    color: #ffffff;
+    box-shadow: 0 0 25 px rgba(0, 245, 212, 0.6);
+}

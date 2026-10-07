@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Geek Fest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 2 задача -->
+    <header>
+    <!-- НАЧАЛО: Меню-бургер (ЗАДАЧА 3) -->
+    <input type="checkbox" id="burger-toggle" hidden>
+    <label for="burger-toggle" class="burger-icon">☰</label>
+    <!-- КОНЕЦ: Меню-бургер -->
+
+    <nav>
+      <ul class="menu">
+            <li><a href="#about">О мероприятии</a></li>
+            <li><a href="#features">Программа</a></li>
+            <li><a href="#invitation">Присоединиться</a></li>
+            <li><a href="#signup">Регистрация</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!-- 3 задача -->
+    <main>
+        <h1 class="title">SUPER GEEK FEST</h1>
+        <article class="promo">
+            <div class="promo_main">
+                <blockquote class="promo_quote">
+                    С большой силой, приходит большая ответственность
+                </blockquote>
+                <img src="images/comics.webp" alt="comics" class="promo_image">
+            </div>
+            <div><img src="images/comicon_1.jpg" alt="comics" class="promo_image"></div>
+            <div><img src="images/comicon_2.jpg" alt="comics" class="promo_image"></div>
+            <div class="last">
+                <img src="images/comicon_3.png" alt="comics" class="promo_image">
+            </div>
+        </article>
+
+        <!-- 14 УРОК -->
+        <!-- ЗАДАЧА 1: Секция "О мероприятии" -->
+        <section id="about">
+            <div class="section-content">
+                <h2>О мероприятии</h2>
+                <p>
+                    <span class="highlight comic">Super Geek Fest</span> — это место, где можно окунуться в
+                    твой любимый мир!
+                </p>
+                <p class="list-title">Приходи, если хочешь:</p>
+                <ul>
+                    <li>встретить косплееров в невероятных костюмах;</li>
+                    <li>поучаствовать в игровых турнирах;</li>
+                    <li>поиграть в настольные игры;</li>
+                    <li>увидеть эксклюзивные показы, анонсы нового и просто прекрасно провести время!</li>
+                </ul>
+            </div>
+            <div class="section-content">
+                <h2>Присоединяйся</h2>
+                <ul>
+                    <li>Тебе есть что рассказать и(или) показать?</li>
+                    <li>Хочешь удивить участников и тебе нужна помощь в подготовке сцены или твоей личной мини-зоны?
+                    </li>
+                    <li>Есть свой личный мерч посвященный любимому фандому?</li>
+                </ul>
+                <p class="highlight support">Мы поможем!</p>
+                <p>Отправляй нам свои контакты и мы свяжемся с тобой в течение ближайших трех дней!</p>
+            </div>
+        </section>
+
+        <!-- ЗАДАЧА 3: Секция "Программа" с карточками -->
+        <article id="features" class="gap_animate">
+            <div class="feature-card">
+                <img src="images/spider_man.jpg" alt="spider_man" />
+                <h3>Что то новенькое</h3>
+                <p>Интересные события, выступления и анонсы, ждут!</p>
+            </div>
+
+            <div class="feature-card feature-card--wide">
+                <img src="images/loungezone.jpg" alt="loungezone" />
+                <h3>Отдыхайте</h3>
+                <p>Различные игровые зоны, с компьютерами или настольными играми, зоны отдыха с мягкими пуфиками! У нас
+                    есть все, для супер отдыха!</p>
+            </div>
+
+            <div class="feature-card feature-card--wide">
+                <img src="images/scene.webp" alt="scene" />
+                <h3>Множество спец-эффектов!</h3>
+                <p>Большая сцена для выступлений и побыть на ней сможет каждый! Живая музыка популярных исполнителей!
+                    Многие из них создавали композиции для наших любимых игр и фильмов!</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/anime.webp" alt="anime" />
+                <h3>Общение</h3>
+                <p>Находите новые знакомства и проводите время в компании единомышленников!</p>
+            </div>
+        </article>
+
+        <!-- 15 УРОК -->
+        <!-- ЗАДАЧА 1 -->
+        <article id="invitation" class="gap_animate">
+            <figure class="image-block">
+                <img src="images/comicon_4.jpg" alt="communicate" />
+            </figure>
+
+            <div class="card">
+                <h4>
+                    МЫ ЖДЕМ <br />
+                    ИМЕННО <span class="highlight">ТЕБЯ</span>
+                </h4>
+                <p>
+                    Присоединяйся к нашему мероприятию и окунись в новое приключение, полное общения,
+                    интересных игр и сюжетов!
+                </p>
+                <a href="#signup">Присоединиться</a>
+            </div>
+
+            <figure class="image-block">
+                <img src="images/cyberzone.webp" alt="cyberzone" />
+            </figure>
+
+            <div class="card">
+                <h4>
+                    НОВЫЕ ОЩУЩЕНИЯ ВМЕСТЕ С <br />
+                    <span class="comic">SUPER GEEK FEST!</span>
+                </h4>
+                <p>Косплеи, игры, турниры, много комиксов и вкусной еды! Гарантия хорошего настроения!</p>
+                <a href="#signup">Присоединиться</a>
+            </div>
+        </article>
+
+        <!-- ЗАДАЧА 3 -->
+        <section class="sponsors">
+            <h6>При поддержке</h6>
+            <ul class="sponsors-list">
+                <li><img src="images/sponsors/logo1.png" alt="logo" /></li>
+                <li><img src="images/sponsors/logo2.png" alt="logo" /></li>
+                <li><img src="images/sponsors/logo3.png" alt="logo" /></li>
+                <li><img src="images/sponsors/logo4.png" alt="logo" /></li>
+            </ul>
+        </section>
+
+        <div id="grid">
+            <img class="left" src="images/game.webp" alt="game" />
+            <img class="center" src="images/anime.webp" alt="anime" />
+            <img class="right" src="images/movies.webp" alt="movies" />
+        </div>
+        <section id="signup">
+        <form class="signup-form">
+          <h5>Регистрация</h5> 
+          <input type="text" placeholder="Ваше имя" />
+          <input type="text" placeholder="Номер телефона" />
+          <input type="text" placeholder="Адрес доставки" class="full-width" /> 
+          <button type="submit">Присоединиться</button>
+        </form>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-block">
+                <h3>SUPER GEEK FEST</h3>
+                <p>Ежегодный фестиваль косплея и поп-культуры</p>
+                <p>Москва</p>
+                <p>52-67 августа</p>
+            </div>
+            <div class="footer-block">
+                <h3>Навигация</h3>
+                <ul class="footer-nav">
+                    <li><a href="#about">О мероприятии</a></li>
+                    <li><a href="#features">Программа</a></li>
+                    <li><a href="#invitation">Присоединиться</a></li>
+                    <li><a href="#signup">Регистрация</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Мы в соцсетях</h3>
+                <ul class="footer-social">
+                    <li><a href="#">ВКонтакте</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-block2">
+            <p>2026 SUPER GEEK FEST. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Club</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Sushi Club</a>
+        <nav class="nav">
+            <ul class="navlist">
+                <li class="navitem"><a href="#about" class="nav__link">О нас</a></li>
+                <li class="navitem"><a href="#menu" class="nav__link">Меню</a></li>
+                <li class="navitem"><a href="#footer__legend" class="nav__link">История</a></li>
+                <li class="navitem"><a href="#order" class="nav__link">Заказать</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="promo-banner">
+        <div class="promo-banner__content">
+            <h2 class="promo-banner__title">Скидка 20% на первый заказ</h2>
+            <p class="promo-banner__text">При заказе от 1000 ₽. Успейте попробовать наши свежие роллы!</p>
+            <button class="button button--primary">Заказать</button>
+        </div>
+    </section>
+    <section class="section slogans" id="slogans">
+        <div class="slogan__container">
+            <div class="slogan__left">
+                <h2 class="slogan__title">Вы любите <span class="highlight">роллы</span></h2>
+                <p class="slogan__subtitle">Мы любим их готовить</p>
+            </div>
+            <div class="slogan__right">
+                <ul class="advantages-list">
+                    <li class="advantages-item">Качество</li>
+                    <li class="advantages-item">Количество</li>
+                    <li class="advantages-item">Скорость</li>
+                    <li class="advantages-item">Цена</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="promo__content">
+            <h1 class="promo__title">Доставка <br> свежих роллов</h1>
+            <p class="promo__text">Бесплатная доставка за 45 минут или за наш счёт!</p>
+            <div class="promo__actions">
+                <button class="button button--primary">Заказать сейчас</button>
+                <img src="pngegg.png" alt="Доставка"class="promo__icon">
+            </div>
+        </div>
+        <div class="promo__image"></div>
+    </section>
+
+    <section class="section menu" id="menu">
+        <h2 class="section__title">Наше меню</h2>
+        <div class="cards">
+            <!-- Карточка 1 -->
+            <div class="card">
+                <div class="card__image card__image--1"></div>
+                <img src="https://нск-суши.рф/thumb/2/qT5b5vEFjYU_4Bvte_3m9Q/630r630/d/khanami_maki.jpg" alt="Ханами Маки" class="card__image">
+                <div class="card__content">
+                    <h3 class="card__title">Ханами Маки</h3>
+                    <p class="card__subtitle">Цветение сакуры</p>
+                    <p class="card__text">Лёгкие роллы с креветками, авокадо и ноткой васаби.</p>
+                </div>
+                <div class="card__stats">
+                    <span class="stat">Острота: 1/5</span>
+                    <span class="stat">Калории: 500</span>
+                </div>
+                <button class="button button--card">Выбрать</button>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="card">
+                <div class="card__image card__image--2"></div>
+                <img src="https://cdn-ru5.foodpicasso.com/assets/2024/02/15/c4c0849af7f31043ce085435833057e3---jpeg_420x420:whitepadding15_94310_convert.jpeg" alt="Уми но Каори" class="card__image">
+                <div class="card__content">
+                    <h3 class="card__title">Уми но Каори</h3>
+                    <p class="card__subtitle">Аромат моря</p>
+                    <p class="card__text">Тунец, лосось, хрустящие водоросли и икра.</p>
+                </div>
+                <div class="card__stats">
+                    <span class="stat">Острота: 5/5</span>
+                    <span class="stat">Калории: 800</span>
+                </div>
+                <button class="button button--card">Выбрать</button>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="card">
+                <div class="card__image card__image--3"></div>
+                <img src="https://menu2go.ru/images/food/1079/1079_1037_20250210102711_6228.jpg" alt="Рю но Мон" class="card__image">
+                <div class="card__content">
+                    <h3 class="card__title">Рю но Мон</h3>
+                    <p class="card__subtitle">Врата дракона</p>
+                    <p class="card__text">Острый соус, жареный угорь и кремовый сыр.</p>
+                </div>
+                <div class="card__stats">
+                    <span class="stat">Острота: 2/5</span>
+                    <span class="stat">Калории: 600</span>
+                </div>
+                <button class="button button--card">Выбрать</button>
+            </div>
+            <!-- Карточка 4 -->
+            <div class="card">
+                <div class="card__image card__image--4"></div>
+                <img src="https://kcdn.tanuki.ru/images/1/SsleVUXtHc1vThPTLe4kMNA8wPNqNEAZ.jpg?width=500" alt="Тсуки но Мичи" class="card__image">
+                <div class="card__content">
+                    <h3 class="card__title">Тсуки но Мичи</h3>
+                    <p class="card__subtitle">Путь луны</p>
+                    <p class="card__text">Краб, огурец и рисовый уксус для утонченного вкуса.</p>
+                </div>
+                <div class="card__stats">
+                    <span class="stat">Острота: 4/5</span>
+                    <span class="stat">Калории: 400</span>
+                </div>
+                <button class="button button--card">Выбрать</button>
+            </div>
+            <!-- Карточка 5 -->
+            <div class="card">
+                <div class="card__image card__image--5"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfjaDYd4GuapkTrSHb90ifZxr1BWGitYAuw&s" alt="Эдо но Адзи" class="card__image">
+                <div class="card__content">
+                    <h3 class="card__title">Эдо но Адзи</h3>
+                    <p class="card__subtitle">Вкус Эдо</p>
+                    <p class="card__text">Копчёный лосось, манго и легкая кислинка юдзу.</p>
+                </div>
+                <div class="card__stats">
+                    <span class="stat">Острота: 5/5</span>
+                    <span class="stat">Калории: 600</span>
+                </div>
+                <button class="button button--card">Выбрать</button>
+            </div>
+            <!-- Карточка 6 -->
+            <div class="card">
+                <div class="card__image card__image--6"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiFUBi705FfZ38asB8N0Pp31x8KgecGgJaQ&s" alt="Кинрэн но Хана" class="card__image">
+                <div class="card__content">
+                    <h3 class="card__title">Кинрэн но Хана</h3>
+                    <p class="card__subtitle">Золотой цветок</p>
+                    <p class="card__text">Сливочный сыр, угорь, кунжут и золотистая икра.</p>
+                </div>
+                <div class="card__stats">
+                    <span class="stat">Острота: 3/5</span>
+                    <span class="stat">Калории: 550</span>
+                </div>
+                <button class="button button--card">Выбрать</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section guarantee">
+        <div class="guarantee__container">
+            <h2 class="guarantee__title">Мы ценим ваше время</h2>
+            <p class="guarantee__text">Если мы не успеем доставить ваш заказ в течение 45 минут, заказ за наш счёт!</p>
+        </div>
+    </section>
+
+    <section class="section advantages" id="about">
+        <h2 class="section__title">Наши преимущества</h2>
+        <div class="advantages__list">
+            <div class="advantage">
+                <div class="advantage__icon">🚀</div>
+                <h3 class="advantage__title">Быстрая доставка</h3>
+                <p class="advantage__text">Доставляем за 45 минут или за наш счёт</p>
+            </div>
+            <div class="advantage">
+                <div class="advantage__icon">⭐</div>
+                <h3 class="advantage__title">Свежие продукты</h3>
+                <p class="advantage__text">Готовим только из свежих ингредиентов</p>
+            </div>
+            <div class="advantage advantage--highlighted">
+                <div class="advantage__icon">🎯</div>
+                <h3 class="advantage__title">Лучшее качество</h3>
+                <p class="advantage__text">Наши повара - мастера японской кухни</p>
+            </div>
+            <div class="advantage">
+                <div class="advantage__icon">💰</div>
+                <h3 class="advantage__title">Доступные цены</h3>
+                <p class="advantage__text">Качество не значит дорого</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__row">
+            <div class="footer__legend">
+                <h3 class="footer__legend-title">"Путешествие ролла"</h3>
+                <p class="footer__legend-text">
+                    Давным-давно самурай Такэши любил рис и рыбу. 
+                    В Sushi Club мы продолжили его традицию.
+                </p>
+            </div>
+            <ul class="footer__links">
+                <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Соцсети</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+            </ul>
+        </div>
+        <p class="footer__copyright">© 2026 Sushi Club</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.slogans {
+    padding: 60px 40px;
+    max-width: 750px;
+    margin: auto; 
+}
+
+.slogan__container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 40px;
+}
+.slogan__left {
+    flex: 1; 
+    text-align: right; 
+    padding-right: 20px;
+    border-right: 3px solid #d63031; 
+}
+
+.slogan__title {
+    font-size: 36px; 
+    color: #2d3436; 
+    margin-bottom: 10px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.slogan__subtitle {
+    font-size: 24px;
+    color: #636e72;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #d63031;
+}
+
+.slogan__right {
+    flex: 1; 
+}
+.advantages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advantages-item {
+    font-size: 22px; 
+    color: #2d3436;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}

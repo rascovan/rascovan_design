@@ -1,0 +1,421 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #d63031;
+    text-decoration: none;
+}
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+.nav__link {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav__link:hover {
+    color: #d63031;
+}
+.promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.promo h1, .promo p, .promo__actions {
+    padding: 0 20px;
+}
+.promo__content {
+    flex: 1;
+    padding-right: 40px;
+}
+.promo__title {
+    font-size: 48px;
+    color: #2d3436;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.promo__text {
+    font-size: 20px;
+    color: #636e72;
+    margin-bottom: 30px;
+    background-color: #f9f7f4;
+}
+.promo__image {
+    flex: 1;
+    height: 500px;
+    background-color: #e0e0e0;
+    background-image: url('icons/promo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button--primary {
+    background-color: #d63031;
+    color: white;
+}
+.button--primary:hover {
+    background-color: #c0392b;
+}
+.promo__icon {
+    width: 48px;
+    height: 48px;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.card__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.stat {
+    font-size: 14px;
+    color: #636e72;
+    font-weight: 600;
+}
+.button--card {
+    background-color: #d63031;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: auto;
+    align-self: center;
+    width: 80%;
+}
+.button--card:hover {
+    background-color: #a82525;
+}
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.advantage {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s linear;
+}
+.advantage:hover {
+    background-color: #ffeaa7;
+    cursor: pointer;
+}
+.advantage__icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.advantage__title {
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+.advantage__text {
+    color: #636e72;
+    font-size: 16px;
+}
+.slogans {
+    padding: 60px 40px;
+    max-width: 750px;
+    margin: auto;
+}
+.slogan__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 40px;
+}
+.slogan__left {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 3px solid #d63031;
+}
+.slogan__title {
+    font-size: 36px;
+    color: #2d3436;
+    margin-bottom: 10px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.slogan__subtitle {
+    font-size: 24px;
+    color: #636e72;
+    font-weight: 600;
+}
+.highlight {
+    color: #d63031;
+}
+.slogan__right {
+    flex: 1;
+}
+.advantages-list {
+    list-style: none;
+    padding: 0;
+}
+.advantages-item {
+    font-size: 22px;
+    color: #2d3436;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.guarantee {
+    padding: 60px 40px;
+    background-color: #d63031;
+    color: white;
+    text-align: center;
+}
+.guarantee__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.guarantee__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.guarantee__text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.card__image--4 {
+    background-image: url('icons/set_4.png');
+}
+.card__image--5 {
+    background-image: url('icons/set_5.png');
+}
+.card__image--6 {
+    background-image: url('icons/set_6.png');
+}
+.promo-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff5f0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.promo-banner__content {
+    flex: 1;
+    padding: 40px;
+}
+.promo-banner__title {
+    font-size: 36px;
+    color: #d63031;
+    margin-bottom: 15px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.promo-banner__text {
+    font-size: 18px;
+    color: #2d3436;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+.promo-banner__image {
+    flex: 1;
+    height: 300px;
+    background-image: url('icons/promo-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #f0c0a0;
+}
+.footer {
+    background-color: #2d3436;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+.footer__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    gap: 30px;
+}
+.footer__legend {
+    text-align: left;
+    flex: 2;
+}
+.footer__legend-title {
+    font-size: 18px;
+    font-family: 'Ysabeau SC', sans-serif;
+    margin-bottom: 10px;
+    color: #d63031;
+}
+.footer__legend-text {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #dfe6e9;
+    max-width: 400px;
+}
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer__link {
+    color: #dfe6e9;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+.footer__link:hover {
+    color: #d63031;
+}
+.footer__copyright {
+    font-size: 18px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .promo-banner {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+    }
+    .promo-banner__content {
+        padding: 30px 20px;
+    }
+    .promo-banner__title {
+        font-size: 28px;
+    }
+    .promo-banner__text {
+        font-size: 16px;
+    }
+    .promo-banner__image {
+        height: 200px;
+        width: 100%;
+    }
+    .promo-banner .button--primary {
+        padding: 14px 28px;
+        font-size: 18px;
+        min-width: 200px;
+    }
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer__legend {
+        text-align: center;
+    }
+    .footer__legend-text {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .footer__links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer__link {
+        font-size: 14px;
+    }
+    .slogan__container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .slogan__left {
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid #d63031;
+        padding-bottom: 15px;
+    }
+    .slogan__title {
+        font-size: 28px;
+    }
+    .slogan__subtitle {
+        font-size: 18px;
+    }
+    .advantages-item {
+        text-align: center;
+    }
+    .guarantee {
+        padding: 40px 20px;
+    }
+    .guarantee__title {
+        font-size: 24px;
+    }
+    .guarantee__text {
+        font-size: 16px;
+    }
+}

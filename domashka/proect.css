@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(7, 15, 31, 0.9);
+    font-family: 'Inter', sans-serif;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+.shop-title {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    color: #64ffda;
+    font-size: 48px;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-card {
+    background: rgba(25, 40, 65, 0.85);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5), 0 0 15px rgba(100, 255, 218, 0.4);
+    border-color: #64ffda;
+}
+.wide-card {
+    grid-column: span 2;
+}
+.product-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(100, 255, 218, 0.4);
+}
+.product-info {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-title {
+    font-family: 'Audiowide', cursive;
+    color: #4fc3f7;
+    font-size: 1.3rem;
+    text-shadow: 0 0 5px rgba(79, 195, 247, 0.5);
+    border-bottom: 2px solid rgba(79, 195, 247, 0.3);
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+}
+.product-desc {
+    color: #ccd6f6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+}
+.product-price {
+    font-family: 'Audiowide', cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #64ffda;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
+    margin: 8px 0 4px;
+}
+.product-btn {
+    background: linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(79, 195, 247, 0.1));
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    font-family: 'Audiowide', cursive;
+    font-size: 1rem;
+    padding: 10px 0;
+    border-radius: 40px;
+    cursor: pointer;
+    transition:  0.3s ease;
+    margin-top: 8px;
+}
+.product-btn:hover {
+    background: #64ffda;
+    color: #0a192f;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+    border-color: #ffffff;
+    transform: scale(1.02);
+}

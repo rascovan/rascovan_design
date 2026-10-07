@@ -1,0 +1,430 @@
+body{
+    background-color: rgba(7, 15, 31, 0.9);
+}
+.world-nav {
+    background: rgba(15, 25, 45, 0.9);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 30px 0;
+    border: 2px solid #00f5d4;
+    box-shadow: 0 0 30px rgba(0, 245, 212, 0.2);
+    text-align: center;
+}
+/* Список меню */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* Пункты меню */
+.menu-item {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+    padding: 15px;
+}
+/* Ссылки меню */
+.menu-link {
+    color: #00f5d4;
+    text-decoration: none;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(0, 245, 212, 0.3);
+    text-shadow: 0 0 10px rgba(0, 245, 212, 0.7); 
+}
+.world-sections {
+    width: 100%;
+    display: flex;
+}
+.locations-block,
+.rules-block {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px;
+    margin: 10px 1%;
+    background: rgba(20, 30, 50, 0.9);
+    border-radius: 18px;
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+/* Заголовки блоков */
+.block-title {
+    font-family: 'Audiowide', cursive;
+    color: #4fc3f7;
+    font-size: 26px;
+    margin: 0 0 25px 0;
+    padding: 15px;
+    border-bottom: 2px solid rgba(79, 195, 247, 0.3);
+    text-shadow: 0 0 10px rgba(79, 195, 247, 0.8);
+}
+/* Список локаций */
+.locations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Элементы списка локаций */
+.location-item {
+    color: #e0f7ff;
+    font-size: 19px;
+    padding: 18px 20px;
+    margin: 12px 0;
+    background: rgba(30, 45, 70, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #00f5d4;
+    line-height: 1.5;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+/* Список правил */
+.rules-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Элементы списка правил */
+.rule-item {
+    transition: 0.3s ease;  
+    color: #bbdefb;
+    font-size: 18px;
+    padding: 18px 20px;
+    margin: 15px 0;
+    background: rgba(40, 55, 80, 0.5);
+    border-radius: 10px;
+    border-left: 4px solid #4fc3f7;
+    line-height: 1.6;
+    font-family: 'Exo 2', sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+/* Стили для активной ссылки по ID */
+#main-nav { 
+    font-weight: bold;
+    background: rgba(0, 245, 212, 0.2);
+    box-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
+}
+/* Hover-эффект для ссылок меню */
+.menu-link:hover {
+    background: rgba(0, 245, 212, 0.25);
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 245, 212, 0.6);
+    transform: scale(1.05);
+}
+
+/* Hover-эффект для локаций */
+.location-item:hover {
+    background: rgba(0, 245, 212, 0.15);
+    border-left: 4px solid #ffffff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Hover-эффект для правил */
+.rule-item:hover {
+    background: rgba(79, 195, 247, 0.15);
+    border-left: 4px solid #ffffff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+.menu-link {
+    transition: 0.3s ease;  
+}
+.menu-link:hover {
+    transform: scale(1.05);
+    background: rgba(0, 245, 212, 0.25);
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 245, 212, 0.6);
+}
+.card-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+    background-image: url("https://i.pinimg.com/736x/9b/dc/7e/9bdc7e0e493f863674cd71257d4b47d2.jpg");
+}
+.cards-container {
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+.info-card {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 15px 1.5%;
+    padding: 0 0 25px 0;
+    background-color: rgba(25, 40, 65, 0.85);
+    overflow: hidden;
+}
+.info-card {
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(100, 255, 218, 0.15),
+        inset 0 0 15px rgba(100, 255, 218, 0.05); 
+        opacity: 0.95; 
+        height: 500px; 
+}
+.card-title {
+    font-family: 'Audiowide', cursive;
+    color: #4fc3f7;
+    font-size: 22px;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(79, 195, 247, 0.4);
+    text-shadow: 0 0 8px rgba(79, 195, 247, 0.6); 
+}
+.card-description {
+    color: #ccd6f6;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 15px 20px 15px;
+}
+.power-element {
+    width: 30%; 
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 10px 1.5%;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 180px;
+    border: 2px solid;
+}
+.power-1 {
+    background: linear-gradient(
+        to bottom, 
+        rgba(100, 255, 218, 0.3) 0%, 
+        rgba(25, 40, 65, 0.9) 70% 
+    );
+    border-color: rgba(100, 255, 218, 0.5); 
+}
+.power-icon {
+    font-size: 40px; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 10px; 
+}
+
+
+.power-1 .power-icon {
+    color: #64ffda; 
+}
+.power-element h3 {
+    font-family: 'Audiowide', cursive; 
+    color: #ffffff; 
+    font-size: 18px; 
+    margin: 0; 
+}
+.power-2 {
+       background: linear-gradient(
+        135deg, 
+        rgba(79, 195, 247, 0.3) 0%,
+        rgba(25, 40, 65, 0.9) 70%
+    );
+    border-color: rgba(79, 195, 247, 0.5); 
+}
+.power-2 .power-icon {
+    color: #4fc3f7; 
+}
+.power-3 {
+       background: radial-gradient(
+        circle at center, 
+        rgba(255, 107, 107, 0.3) 0%, 
+        rgba(25, 40, 65, 0.9) 70% 
+    );
+    border-color: rgba(255, 107, 107, 0.5); 
+}
+
+.power-3 .power-icon {
+    color: #ff6b6b;
+}
+.site-footer {
+    margin-top: 70px; 
+    padding: 50px 20px; 
+    text-align: center;
+    
+        background: radial-gradient(
+        circle at center,
+        rgba(100, 255, 218, 0.2) 0%,
+        rgba(25, 40, 65, 0.6) 40%,
+        #0a192f 80%
+    );
+    border-top: 2px solid rgba(100, 255, 218, 0.4); 
+}
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'Audiowide', cursive;
+    font-size: 28px;
+    color: #64ffda;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.6);
+}
+.footer-text {
+    color: #8892b0;
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 25px; 
+}
+.footer-link {
+    display: inline-block;
+    color: #4fc3f7;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px; 
+    padding: 8px 15px; 
+    border-radius: 6px;
+    background: rgba(79, 195, 247, 0.1);
+    border: 1px solid rgba(79, 195, 247, 0.3); 
+    margin: 0 5px; 
+}
+.footer-energy {
+    color: #64ffda; 
+    font-size: 14px; 
+    font-family: 'Audiowide', cursive;
+}
+
+.energy-level {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.7);
+}
+.power-element:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+    transition: all 0.3s ease; 
+}
+.power-1:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(100, 255, 218, 0.5) 0%, 
+        rgba(25, 40, 65, 0.95) 70% 
+    );
+}
+.power-2:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(79, 195, 247, 0.5) 0%, 
+        rgba(25, 40, 65, 0.95) 70% 
+    );
+}
+
+.power-3:hover {
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 107, 107, 0.5) 0%, 
+        rgba(25, 40, 65, 0.95) 70% 
+  );
+}
+.powers-title {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    color: #64ffda;
+    font-size: 30px;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+}
+.info-card-rare {
+    display: inline-block;
+    border: 2px solid #03f34f;
+    box-shadow: 0 0 25px rgba(3, 255, 58, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(25, 40, 65, 0.85);
+}
+.info-card-rare:hover {
+    transform: scale(1.05);
+}
+.info-card-epic{
+    display: inline-block;
+    border: 2px solid blue;
+    box-shadow: 0 0 25px rgba(5, 17, 185, 0.945);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    height: 500px;        
+    text-align: center;         
+    background-color: rgba(25, 40, 65, 0.85); 
+    
+}
+.card-container{
+    display: inline-block;
+    margin: 20px;
+}
+.info-card-epic:hover { 
+    transform: scale(1.05);
+}
+.info-card-mythic {
+    display: inline-block;
+    max-width: 200px;                           
+    margin: 15px;           
+    padding: 0 0 25px 0;           
+    background-color: rgba(25, 40, 65, 0.85);  
+    border: 2px solid #b31313;
+    box-shadow: 0 0 25px rgba(240, 1, 1, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;                 
+    height: 500px;             
+    text-align: center;    
+}
+.card-title-mythic {
+    font-family: 'Audiowide', cursive;
+    color: #b81818;
+    font-size: 22px;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(189, 18, 18, 0.4);
+    text-shadow: 0 0 8px rgba(180, 18, 18, 0.6);
+}
+.card-title-rare {
+    font-family: 'Audiowide', cursive;
+    color: #03f34f;
+    border-bottom: 2px solid rgba(24, 156, 13, 0.4);
+    font-size: 22px;
+}
+.card-title-epic{
+    font-family: 'Audiowide', cursive;
+    color: #1d05f1;
+    border-bottom: 2px solid rgba(94, 9, 206, 0.4);
+    font-size: 22px;
+}
+.info-card-mythic:hover {
+    transform: scale(1.05);
+}
+.info-card-legendary{
+display: inline-block;   
+max-width: 15%;                   
+    margin: 15px;           
+    padding: 0 0 25px 0;           
+    background-color: rgba(25, 40, 65, 0.85);  
+    border: 2px solid #e6d70b;
+    box-shadow: 0 0 25px rgba(214, 201, 9, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;                 
+    height: 500px;             
+    text-align: center;   
+}
+.card-title-legendary {
+    font-family: 'Audiowide', cursive;
+    color: #d8db0f;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(224, 221, 9, 0.4);
+    text-shadow: 0 0 8px rgba(219, 216, 11, 0.6);
+}
+.info-card-legendary:hover {
+    transform: scale(1.05);
+}
